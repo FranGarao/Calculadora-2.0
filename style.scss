@@ -1,0 +1,120 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, blueviolet, pink);
+    #calculadora{
+        width: 70vw;
+        height: 70vh;
+        background-image: linear-gradient(to bottom, violet, blue);
+        border: 3px solid black;
+        border-radius: 8px;
+        padding: 20px;
+        color: white;
+        font-size: 30px;
+ box-shadow: 
+    7px 7px 10px rgba(0, 0, 0, 0.3),
+    -7px -7px 10px rgba(255, 255, 255, 0.388); ;
+    
+    #cuenta{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        height: 15%;
+        width: 90%;
+        margin-bottom: 40px;
+        background-image: linear-gradient(to bottom, violet, blue);
+        border: 2px solid black;
+        color: white;
+        font-size: 100px;
+        padding: 20px;
+        overflow: hidden;
+      
+          
+    }
+#grid{
+    width: 100%;
+    height:90%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 17%);
+    grid-template-areas: "on off borrar dividir"
+    "siete ocho nueve multiplicar"
+    "cuatro cinco seis restar"
+    "uno dos tres sumar"
+    "cero punto igual igual";
+   
+#uno {grid-area: uno;
+    border-radius: 8px;
+    width: 70%;
+    height: 60%;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(10, 10, 80));
+    color: rgb(235, 235, 235);
+    font-size: 1.4em;
+    };
+#dos {grid-area: dos;
+@extend #uno};
+#tres {grid-area: tres;@extend #uno};
+#cuatro {grid-area: cuatro;@extend #uno};
+#cinco {grid-area: cinco;@extend #uno};
+#seis {grid-area: seis;@extend #uno};
+#siete {grid-area: siete;@extend #uno};
+#ocho {grid-area: ocho;@extend #uno};
+#nueve {grid-area: nueve;@extend #uno};
+#cero {grid-area: cero;@extend #uno};
+#multiplicar {grid-area: multiplicar;@extend #uno};
+#sumar {grid-area: sumar;@extend #uno};
+#igual {grid-area: igual;@extend #uno};
+#restar {grid-area: restar;@extend #uno};
+#dividir {grid-area: dividir;@extend #uno};
+#punto {grid-area: punto;@extend #uno};
+#on {grid-area: on;@extend #uno};
+#off {grid-area: off;@extend #uno};
+#borrar{
+    grid-area: borrar;@extend #uno
+};
+}
+
+
+
+}}
+
+       //width: 500px;
+//         display: grid;
+//         grid-template-columns: repeat(4, 25%);
+//         grid-template-rows: repeat(4, 25%);
+//         gap: 10px;
+//         grid-template-areas:
+//          "uno dos tres dividir"
+//         "cuatro cinco seis multiplicar"
+//           "siete ocho nueve restar"
+//           "cero multiplicar igual sumar";
+     
+//     #multiplicar,   #dividir, #restar,  #sumar,#uno,#dos,#tres,#cuatro,#cinco,#seis,#siete,#ocho,#nueve,#cero{
+//             width: 100px;
+//             height: 100px;
+//             background-color: rgb(0, 0, 0);
+//             color: rgb(235, 235, 235);
+//             font-size: 75px;
+// margin: 10px;
+//         }
+//         #uno { grid-area: uno; }
+// #dos { grid-area: dos; }
+// #tres { grid-area: tres; }
+// #dividir { grid-area: dividir; }
+// #cuatro { grid-area: cuatro; }
+// #cinco { grid-area: cinco; }
+// #seis { grid-area: seis; }
+// #multiplicar { grid-area: multiplicar; }
+// #siete { grid-area: siete; }
+// #ocho { grid-area: ocho; }
+// #nueve { grid-area: nueve; }
+// #restar { grid-area: restar; }
+// #cero { grid-area: cero; }
+// #igual { grid-area: igual; }
+// #sumar { grid-area: sumar; }
+//        }}}
