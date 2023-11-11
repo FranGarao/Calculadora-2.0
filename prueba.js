@@ -251,3 +251,20 @@ document.addEventListener("DOMContentLoaded", function () {
     manejarOperacion();
   });
 });
+
+
+
+
+
+function on() {
+  for (let index = 0; index <= 9; index++) {
+    const boton = document.getElementById(`${numeros[index][0]}`);
+    if (!boton.hasEventListener) {
+      boton.addEventListener("click", () => {
+        agregarDigito(numeros[index][1]);
+      });
+      boton.hasEventListener = true;  // Marcar el botón como que tiene un evento asociado
+    }
+    boton.disabled = false;
+  }
+}
